@@ -18,6 +18,6 @@ Each approach times the total time taken by thread(s), to execute the program an
 
 1. Ensure you have g++ in your system, else install using - sudo apt-get install g++.
 
-2. Compile: g++ -std=c++11 -O2 -pthead -o output approach<number>.cpp . In place of <number>, input the approach you wish to try.
+2. Compile: g++ -std=c++11 -O2 -pthread -o output approach<number>.cpp . In place of <number>, input the approach you wish to try.
 
 3. Run ./output
