@@ -50,9 +50,7 @@ int main(){
 
 	for(int i=0;i<MAX_THREADS;i++){
 		threads.push_back(std::thread(multiAdd, (var/MAX_THREADS)*(i+1), ((var/MAX_THREADS)*i)+1));
-	}
-
-	
+	}	
 
 	for (auto &th : threads) {
    		 th.join();

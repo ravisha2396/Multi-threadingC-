@@ -12,7 +12,6 @@ std::mutex mtx;
 
 unsigned long long total=0;
 
-
 long long add(unsigned long lim, unsigned long start){
 
 	unsigned long i=start;
@@ -51,8 +50,6 @@ int main(){
 	for(int i=0;i<MAX_THREADS;i++){
 		threads.push_back(std::thread(multiAdd, (var/MAX_THREADS)*(i+1), ((var/MAX_THREADS)*i)+1));
 	}
-
-	
 
 	for (auto &th : threads) {
    		 th.join();

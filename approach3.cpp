@@ -52,8 +52,6 @@ int main(){
 		threads.push_back(std::thread(multiAdd, var, i+1));
 	}
 
-	
-
 	for (auto &th : threads) {
    		 th.join();
   		}
